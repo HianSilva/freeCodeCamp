@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>freecodecamp - form</title>
+</head>
+<body>
+  <header>
+    <h1 id="title">Formulário freecodecamp</h1>
+    <p id="description">Formulário criado durante o freecodecamp!</p>
+  </header>
+  <main>
+    <form action="" id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Nome</label>
+        <input type="text" name="name" id="name" required class="text-input" placeholder="Insira seu nome aqui...">
+      </div>
+
+      <div class="form-group">
+        <label for="email" id="email-label">Email</label>
+        <input type="email" name="email" id="email" class="text-input" required placeholder="Insira seu email aqui...">
+      </div>
+
+      <div class="form-group">
+        <label for="number" id="number-label">Idade</label>
+        <input type="number" name="age" id="number" min="5" max="100" class="text-input" placeholder="Insira sua idade aqui...">
+      </div>
+
+      <div class="form-group">
+        <label for="dropdown" id="dropdown-label">Qual das opções abaixo te descreve melhor?</label>
+        <select name="role" id="dropdown">
+          <option disabled selected value>Escolha a opção que melhor te descreve</option>
+          <option value="student">Estudante</option>
+          <option value="job">Empregado em tempo integral</option>
+          <option value="learner">Estudante em tempo integral</option>
+          <option value="preferNo">Prefiro não responder</option>
+          <option value="other">Outro</option>
+        </select>
+      </div>
+
+      
+      <div class="form-group">
+        <p>Você recomendaria o freecodecamp para um amigo?</p>
+        <label>
+          <input type="radio" name="user-recommend" value="definitely" class="radio-input" >
+          Com certeza!
+        </label>
+
+        <label>
+          <input type="radio" name="user-recommend" value="maybe" class="radio-input">
+          Talvez
+        </label>
+        
+        <label>
+          <input type="radio" name="user-recommend" value="not-sure" class="radio-input">
+          Não tenho certeza
+        </label>
+      </div>
+
+      <div class="form-group">
+        <p>O que você melhoraria no freecodecamp?</p>
+        <label>
+          <input type="checkbox" name="prefer" value="front-end-projects" class="checkbox-input">
+          Projetos Front-End
+        </label>
+        <label>
+          <input type="checkbox" name="prefer" value="back-end-projects" class="checkbox-input">
+          Projetos Back-End
+        </label>
+
+        <label>
+          <input type="checkbox" name="prefer" value="challenges" class="checkbox-input">
+          Desafios
+        </label>
+
+        <label>
+          <input type="checkbox" name="prefer" value="additional-courses" class="checkbox-input">
+          Cursos adicionais
+        </label>
+      </div>
+
+      <div class="form-group">
+        <p>Algum comentário ou sugestão?</p>
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="Insira o seu comentário aqui..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Enviar
+        </button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
