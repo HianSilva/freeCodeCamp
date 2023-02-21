@@ -1,0 +1,89 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(50, 50, 119);
+}
+
+main{
+  background-color: rgb(39, 37, 37);
+  color: white;
+  width: 800px;
+  margin: auto auto;
+
+  padding: 10px 10px;
+
+  font-size: 18px;
+}
+
+header{
+  margin: 30px auto;
+  text-align: center;
+
+  color: white;
+}
+
+header p, h1{
+  margin: 10px 0px;
+}
+
+#title{
+  margin: 10px auto;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+
+  margin: 15px 15px;
+}
+
+.form-group p{
+  padding: 0 0 3px 0px;
+  margin: 5px 0  ;
+}
+
+#email-label, #name-label, #number-label, #dropdown-label{
+  padding: 0 0 5px 0px;
+}
+
+#comments{
+  resize: none;
+  padding: 10px;
+  height: 100px;
+}
+
+#submit{
+  border: none;
+  border-radius: 5px;
+  height: 35px;
+
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: bold;
+
+  color: white;
+  background-color: #34B233;
+
+  margin: 15px 0;
+}
+
+.radio-input{
+  margin: 5px 0;
+}
+
+.text-input{
+  height: 25px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+
+  font-size: 16px;
+  font-weight: normal;
+}
+
+select{
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  height: 30px;
+}
